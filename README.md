@@ -13,7 +13,7 @@ A codificação backend Java utiliza dependências administradas por Maven, como
 
 ## Exemplos
 
-A codificação publicada atualmente consiste-se no protótipo do sistema – brach “prototype”, https://github.com/ProjetoCE/CanalEletronico/tree/prototype -, que apresenta uma amostra da proposta de interface gráfica interação com usuário.
+A codificação publicada atualmente consiste-se no protótipo do sistema – brach “prototype” [https://github.com/ProjetoCE/CanalEletronico/tree/prototype] -, que apresenta uma amostra da proposta de interface gráfica interação com usuário.
 
 O exemplo apresenta o layout adaptado para acesso por dispositivos móveis, possibilitando a avaliação de sua legibilidade e adequação a seus propósitos.
 
