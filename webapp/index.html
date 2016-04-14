@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- <%@ page language="java" pageEncoding="UTF-8"%> -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title data-lang="pt">Canal Eletrônico</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/echannel-1.1-beta.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/echannel-1.1-beta.js"></script>
+  </head>
+  <body>
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Mobile collapse -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed btn-navbar" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="icon-sample"></div>
+          <!-- <img class="navbar-icon" src="logopath"> -->
+          <!-- <div class="navbar-brand" data-lang="pt">CANAL ABERTO</div> -->
+          <button type="button" id="lang-en" class="btn btn-default btn-navbar pull-right btn-lang" data-langbtn="en">En</button>
+          <button type="button" id="lang-pt" class="btn btn-default btn-navbar pull-right btn-lang" data-langbtn="pt">Pt</button>
+        </div>
+        <!-- Desktop extension -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+                <a href="#" data-lang="pt">Denúncia</a>
+                <a href="#" data-lang="en">Tip</a>
+            </li>
+            <li>
+                <a href="#" data-lang="pt">Informações</a>
+                <a href="#" data-lang="en">Information</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Bottom navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-control">
+        <div class="container-fluid">
+          <button id="btn-next" type="button" class="btn btn-warning navbar-btn btn-slide btn-next">
+            <span data-lang="pt">Avançar</span>
+            <span data-lang="en">Next</span>
+          </button>
+          <button id="btn-prev" type="button" class="btn btn-navbar navbar-btn btn-slide btn-prev">
+            <span data-lang="pt">Voltar</span>
+            <span data-lang="en">Previous</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main container -->
+    <div id="container-main" class="container-main" data-view="0">
+
+      <div id="block-intro" class="container-block current" data-block="0">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Canal Eletrônico</div>
+            <div class="info-title" data-lang="en">E-Channel</div>
+            <div class="info-body" data-lang="pt">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-feature" class="container-block" data-block="1" data-validate="form">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Identificação</div>
+            <div class="info-title" data-lang="en">Identification</div>
+            <div class="info-body" data-lang="pt">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Quis nostrud exercitation ullamco sum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime optio cumque nihil impedit quo minus id quod maxime quo minus id quod.</p>
+            </div>
+          </div>
+          <div class="form-group radio required" data-validate="radio">
+            <label class="btn-radio" >
+              <input type="radio" name="tip-feature" value="0">
+                <span data-lang="pt"> Denúncia anônima</span>
+                <span data-lang="en"> Anonymous tip</span>
+            </label>
+            <label class="btn-radio" >
+              <input type="radio" name="tip-feature" value="1">
+                <span data-lang="pt"> Denúncia identificada</span>
+                <span data-lang="en"> Identified tip</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-email" class="container-block" data-block="2" data-validate="form">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Endereço de e-mail</div>
+            <div class="info-title" data-lang="en">Email address</div>
+            <div class="info-body" data-lang="pt">
+              <p>Sum soluta nobis est eligendi optio cumque nihil nam libero tempore, cum soluta nobis est eligendi optio cumque nihil facere possimus.</p>
+              <p>Impedit quo minus id quod maxime placeat.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Ullamco sum soluta nobis est eligendi optio cumque nihil sum soluta nobis est eligendi optio cumque nihil nam libero tempore, cum  facere possimus.</p>
+              <p>Soluta nobis est eligendi optio cumque nihil.</p>
+            </div>
+          </div>
+          <div class="form-group required" data-validate="email">
+            <label for="reporter-email" data-lang="pt">Insira o endereço de e-mail</label>
+            <label for="reporter-email" data-lang="en">Provide the email address</label>
+            <input id="reporter-email" type="email" class="form-control">
+          </div>
+        </div>
+      </div>
+
+      <div id="block-field" class="container-block" data-block="3" data-validate="form">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Área de investigação</div>
+            <div class="info-title" data-lang="en">Investigation field</div>
+            <div class="info-body" data-lang="pt">
+              <p>Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Ut aut reiciendis voluptatibus maiores alias consequatur aut accusantium doloremque.</p>
+            </div>
+          </div>
+          <div class="form-group required" data-validate="select">
+            <label for="tip-field" data-lang="pt">Selecione uma das opções disponíveis</label>
+            <label for="tip-field" data-lang="en">Select a given option</label>
+            <select id="tip-field" class="form-control">
+              <option disabled="disabled" data-lang="pt" selected>Selecione...</option>
+              <option disabled="disabled" data-lang="en" selected>Select...</option>
+              <option value="0" data-lang="pt">Crimes cibernéticos</option>
+              <option value="0" data-lang="en">Cybercrimes</option>
+              <option value="1" data-lang="pt">Crimes fazendários</option>
+              <option value="1" data-lang="en">State-corporate crimes</option>
+              <option value="2" data-lang="pt">Crimes contra o patrimônio</option>
+              <option value="2" data-lang="en">Property crimes</option>
+            </select>
+          </div>
+          <div class="info-alert" data-key="0">
+            <span data-lang="pt">Selecione uma das opções disponíveis.</span>
+            <span data-lang="en">Choose a given option.</span>
+          </div>
+          <div class="info-block">
+          </div>
+          <div class="info-repo" data-id="0">
+            <p><b>Crimes cibernéticos</b></p>
+            <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <p>Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis quam nihil molestiae consequatur</p>
+          </div>
+          <div class="info-repo" data-id="1">
+            <p><b>Crimes fazendários</b></p>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div class="info-repo" data-id="2">
+            <p><b>Crimes contra o patrimônio</b></p>
+            <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            <p>Sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-description" class="container-block" data-block="4" data-validate="form">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Descrição dos fatos</div>
+            <div class="info-title" data-lang="en">Incidents report</div>
+            <div class="info-body" data-lang="pt">
+              <p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+            </div>
+          </div>
+          <div class="form-group required" data-validate="input">
+            <label for="tip-description" data-lang="pt">Descreva os fatos ocorridos</label>
+            <label for="tip-description" data-lang="en">Describe the ocurred incidents</label>
+            <textarea id="tip-description" class="form-control" rows="8"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-send" class="container-block" data-block="5">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Enviar denúncia</div>
+            <div class="info-title" data-lang="en">Submit tip</div>
+            <div class="info-body" data-lang="pt">
+              <p>Placeat facere possimus neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            </div>
+          </div>
+          <div class="form-group captcha-group">
+            <div class="captcha-frame">
+              <img id="captcha-img" class="captcha-img" src="images/captcha.png">
+            </div>
+            <div class="captcha-row">
+              <label class="captcha-label" data-lang="pt">Digite o texto da imagem acima</label>
+              <label class="captcha-label" data-lang="en">Type the text of the image above</label>
+              <input id="captcha-input" type="text" class="form-control captcha-input">
+            </div>
+            <div class="captcha-row text-right">
+              <button id="btn-submit" type="button" class="btn btn-danger btn-submit">
+                <span data-lang="pt">Enviar denúncia</span>
+                <span data-lang="en">Submit tip</span>
+              </button>
+            </div>
+          </div>
+          <div class="info-alert" data-key="0">
+            <span data-lang="pt">Os caracteres digitados não correspondem aos da imagem.</span>
+            <span data-lang="en">The typed characters do not match the image.</span>
+          </div>
+          <div class="info-alert" data-key="1">
+            <span data-lang="pt">Digite o texto exibido na imagem.</span>
+            <span data-lang="en">Type the text shown in the image.</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-final" class="container-block" data-block="6">
+        <div class="container-body">
+          <div class="info-group">
+            <div class="info-title" data-lang="pt">Denúncia enviada</div>
+            <div class="info-title" data-lang="en">Tip submitted</div>
+            <div class="info-body" data-lang="pt">
+              <p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+            <div class="info-body" data-lang="en">
+              <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+            </div>
+          </div>
+          <div class="info-tip">
+            2016004576
+          </div>
+          <div class="info-body" data-lang="pt">
+            <p>Sua denúncia foi enviada para:</p>
+            <p>
+              UNIDADE DO DPF<br>
+              Endereço da Unidade<br>
+              Cidade - UF<br>
+              +55 099 8765.4321<br>
+            </p>
+          </div>
+          <div class="info-body" data-lang="en">
+            <p>Your tip was sent to:</p>
+            <p>
+              DPF DIVISION<br>
+              Unit Address<br>
+              City - ST<br>
+              +55 099 8765.4321<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /#container-main -->
+
+    <div id="container-resources" class="resource">
+        <div id="resource-warning-screen">
+            <p><b>Atenção!</b> Esta versão do aplicativo não é acompanhada do layout adaptado para exibição em dispositivos com resoluções dimensionadas acima da média aplicada a <i>smartphones</i>.</p>
+            <p>Embora não haja quaisquer impedimentos para continuar a exibição do aplicativo mesmo em exibições em escala majorada, recomenda-se utilizar os recursos de design responsivo do navegador – como no caso <a class="alert-link" href="https://developer.mozilla.org/pt-BR/docs/Tools/Modo_Design_Adaptavel" target="_blank">deste exemplo para o Mozilla Firefox</a> –, ou <a id="screen-adjust" class="alert-link screen-adjust" href="#">acesse diretamente com uma janela adaptada</a>.</p>
+        </div>
+    </div>
+  </body>
+</html>
