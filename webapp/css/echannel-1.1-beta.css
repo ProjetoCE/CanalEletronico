@@ -1,0 +1,245 @@
+body {
+  background-color: #dddddd;
+  overflow: hidden;
+}
+button,
+div,
+nav {
+  border-radius: 0px !important;
+}
+.navbar {
+  min-height: 50px;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border: none;
+}
+.navbar-fixed-top {
+  border-bottom: 1px solid #999999;
+}
+.navbar-brand {
+  display: none;
+  float: left;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 30px;
+  height: 50px;
+}
+.navbar-icon {
+  float: left;
+  height: 35px;
+  padding: 3px 5px 0px 5px;
+  margin: 5px 5px 0px 10px;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffcc00;
+}
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  color: #ffcc00;
+}
+.btn-navbar {
+    float: right;
+    height: 50px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    color: #ffcc00;
+}
+.btn-navbar:active,
+.btn-navbar:focus,
+.btn-navbar:hover {
+  background-color: #333333;
+  color: #ff9900;
+}
+.icon-bar {
+  background-color: #ffcc00 !important;
+}
+.icon-bar:active,
+.icon-bar:focus,
+.icon-bar:hover {
+  background-color: #ff9900;
+}
+.btn-warning {
+  color: #222222;
+  background-color: #ff9900;
+  border-color: #e68a00;
+}
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning:focus,
+.btn-warning.focus,
+.btn-warning:hover,
+.open > .dropdown-toggle.btn-warning {
+  color: #080808;
+  background-color: #e68a00;
+  border-color: #e68a00;
+}
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus {
+  background-color: #ffcc00;
+  border-color: #ff9900;
+}
+.container-main {
+  position: absolute;
+  display: block;
+  clear: both;
+  width: 100%;
+  height: calc(100% - 100px);
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.container-block {
+  position: absolute;
+  display: none;
+  clear: both;
+  width: 100%;
+  top: 0%;
+  left: 100%;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  opacity: 0.5;
+}
+.container-block.current {
+  display: block;
+  left: 0%;
+  opacity: 1;
+}
+.container-body {
+  max-width: 800px;
+  height: 100%;
+}
+.container-control {
+  max-width: 800px;
+}
+.container-control .container-fluid {
+  padding: 0px;
+}
+.btn-radio {
+  display: block;
+  padding-bottom: 6px;
+}
+.btn-radio.checked {
+  font-weight: bold;
+}
+.btn-radio+.btn-radio {
+  margin-top: 5px;
+}
+.btn-next,
+.btn-prev {
+  width: 90px;
+  height: 50px;
+  margin: 0px;
+}
+.btn-next {
+  float: right;
+}
+.btn-prev {
+  float: left;
+  display: none;
+}
+.info-group {
+  padding-bottom: 15px;
+}
+.info-title {
+  display: block;
+  padding-top: 20px;
+  font-size: 24px;
+  line-height: 1;
+}
+.info-body {
+  padding-top: 20px;
+}
+.info-block {
+  padding-top: 15px;
+  color: #777777;
+}
+.info-repo {
+  display: none;
+}
+.info-block .info-repo {
+  display: block;
+}
+.info-alert {
+  display: none;
+  background-color: #f2dede;
+  border: 1px solid #a94442;
+  color: #a94442;
+  margin-top: 10px 0px;
+  padding: 10px;
+}
+.info-tip {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #a94442;
+}
+.captcha-group {
+  display: block;
+  max-width: 480px;
+  background-color: #bbbbbb;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+.captcha-frame {
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+}
+.captcha-row {
+  display: block;
+}
+.captcha-row+.captcha-row,
+.captcha-frame+.captcha-row {
+  margin-top: 10px;
+}
+.captcha-label {
+  margin-bottom: 5px;
+}
+.btn-submit {
+    margin: 0px;
+}
+*[data-langbtn="en"] {
+  color: #777777;
+  opacity: 0.6;
+}
+*[data-lang="en"],
+a[data-lang="en"],
+div[data-lang="en"],
+option[data-lang="en"] {
+  display: none;
+}
+.resource {
+    display: none;
+}
+.icon-sample {
+    display: block;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+}
+.icon-sample:before {
+    content: "DP";
+}
